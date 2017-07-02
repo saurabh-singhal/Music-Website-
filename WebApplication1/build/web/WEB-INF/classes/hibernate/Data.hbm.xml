@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 20, 2017 12:45:11 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate.Data" table="data" catalog="soundmatch" optimistic-lock="version">
+        <id name="idx" type="string">
+            <column name="idx" length="30" />
+            <generator class="assigned" />
+        </id>
+        <property name="namex" type="string">
+            <column name="namex" length="30" not-null="true" />
+        </property>
+        <property name="emailx" type="string">
+            <column name="emailx" length="30" not-null="true" />
+        </property>
+        <property name="musicx" type="string">
+            <column name="musicx" length="1000" not-null="true" />
+        </property>
+        <property name="mcount" type="int">
+            <column name="mcount" not-null="true" />
+        </property>
+        <property name="friendx" type="string">
+            <column name="friendx" length="500" not-null="true" />
+        </property>
+        <property name="fcount" type="int">
+            <column name="fcount" not-null="true" />
+        </property>
+        
+    </class>
+</hibernate-mapping>
